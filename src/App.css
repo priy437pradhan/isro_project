@@ -33,7 +33,7 @@ html, body {
 h1.logoHP {
   margin: 0;
   padding: 0;
-  text-transform: capitalize;
+  text-transform:uppercase;
   color: #fff;
   font-size: 2.5em;
 }
@@ -54,13 +54,33 @@ h1.logoHP {
     font-weight: 700;
   }
 /* common */
-
-
-
+.card-list{
+    margin: 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 220px;
+    overflow-y: scroll;
+}
+.card{
+    height:100px;
+    width: 250px;
+    border:2px solid #ccc;
+    background-color: #edf2f7;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /* footer */
 .footer {
+    width: 100%;
+    
     background-color: #2d3748; 
     color: #edf2f7; 
     padding: 10px 0;
@@ -119,3 +139,82 @@ h1.logoHP {
     margin-top: 10px;
     flex-basis: 100%;
 }
+
+
+::-webkit-scrollbar {
+    width: 5px; 
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 6px; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  @media (max-width: 600px) {
+    .lloging {
+        display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #2d3748;
+          height: 40px;
+          padding: 5px 20px;
+          width: 100%;
+          border-bottom: 2px solid #030407;
+          position: sticky;
+          top: 0;
+          left: 0;
+          z-index: 101;
+      }
+    h1.logoHP {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1.5em;
+      }
+      .card-listh1{
+        letter-spacing: .15em;
+        font-size: 1.2em;
+        padding: 10px 10px;
+      }
+    .card-list{
+        margin: 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 160px;
+        overflow-y: scroll;
+    }
+    .card{
+        height:auto;
+        min-height: 60px;
+        width: 150px;
+        border:2px solid #ccc;
+        background-color: #edf2f7;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+
+    }
+    footer{
+        width: 100%;
+
+    }
+    .footer-content .footer-section h4 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+  }
+}
+

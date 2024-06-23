@@ -1,5 +1,22 @@
 import { useEffect, useState } from 'react';
-import SingleCard from './SingleCard';
+import PropTypes from 'prop-types';
+import '../App.css';
+
+function SingleCard({ name, Place, State }) {
+  return (
+    <div className="card">
+      <h5 className="card-title">{name}</h5>
+      <p className="card-place">{Place}</p>
+      <p className="card-state">{State}</p>
+    </div>
+  );
+}
+
+SingleCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  Place: PropTypes.string.isRequired,
+  State: PropTypes.string.isRequired,
+};
 
 function Center() {
   const [cards, setCards] = useState([]);
@@ -25,7 +42,7 @@ function Center() {
   return (
     <>
       <h1 className="card-listh1">Center</h1>
-      <div className="card-list">
+      <div className="card-list container">
         {cards.map((card, index) => (
           <SingleCard 
             key={index} 
