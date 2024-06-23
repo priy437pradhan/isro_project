@@ -1,42 +1,121 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* header */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+html, body {
+    overflow-x: hidden; 
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.lloging {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d3748;
+    height: 70px;
+    padding: 5px 20px;
+    width: 100%;
+    border-bottom: 2px solid #030407;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 101;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.lloging  p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
   }
-  to {
-    transform: rotate(360deg);
+
+
+h1.logoHP {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 2.5em;
+}
+
+/* body */
+.mainContent{
+    background-color: #90cdf4;
+}
+/* common */
+.card-listh1{
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    padding: 50px 0 10px 30px;
+    margin: 0;
+    max-height: 5em;
+    font-weight: 700;
   }
+/* common */
+
+
+
+
+
+/* footer */
+.footer {
+    background-color: #2d3748; 
+    color: #edf2f7; 
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-top: 3px solid rgb(9, 47, 85);
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.footer-content .footer-section {
+    margin: 10px 0;
+    flex: 1;
+    min-width: 250px;
 }
 
-.card {
-  padding: 2em;
+.footer-content .footer-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.footer-content .footer-section p {
+    margin: 5px 0;
+}
+
+.footer-content .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer-content .footer-section ul li {
+    margin: 5px;
+}
+
+.footer-content .footer-section ul li a {
+    color: #63b3ed;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content .footer-section ul li a:hover {
+    color: #90cdf4;
+}
+
+.footer-content .copy {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    flex-basis: 100%;
 }
